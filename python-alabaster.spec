@@ -12,23 +12,9 @@ License:	BSD
 Group:		Development/Python
 Url:		http://sphinx.pocoo.org/
 BuildArch:	noarch
-Requires:	python-pkg-resources
-Requires:	python-docutils
-Requires:	python-jinja2
-Requires:	python-pygments
 BuildRequires:	python-setuptools
-%if %{with doc}
-BuildRequires:	python-docutils >= 0.7
-BuildRequires:	python-jinja2 >= 2.3
-%endif
-%if %{with tests}
-BuildRequires:	python-nose
-BuildRequires:	python-pygments
-BuildRequires:  python-jinja2
-%endif
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python3-distribute
-%rename python3-sphinx
 
 %description
 Alabaster is a visually (c)lean, responsive, configurable theme for the Sphinx
@@ -48,13 +34,7 @@ other projects.
 %package -n python2-alabaster
 Summary:	Theme for the Sphinx documentation generator
 Group:		Development/Python
-Requires:	python2-docutils >= 0.7
-Requires:	python2-pygments >= 1.2
-Requires:	python2-jinja2 >= 2.3
 BuildRequires:	pkgconfig(python2)
-BuildRequires:	python2-nose
-BuildRequires:	python2-pygments
-BuildRequires:  python2-jinja2
 BuildRequires:	python2-setuptools
 
 %description -n python2-alabaster
