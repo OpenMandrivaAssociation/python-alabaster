@@ -5,7 +5,7 @@
 Summary:	Theme for the Sphinx documentation generator
 
 Name:		python-alabaster
-Version:	0.7.10
+Version:	0.7.12
 Release:	2
 Source0:	https://github.com/bitprophet/alabaster/archive/%{version}.tar.gz
 License:	BSD
@@ -18,10 +18,10 @@ BuildRequires:	python3-distribute
 
 %description
 Alabaster is a visually (c)lean, responsive, configurable theme for the Sphinx
-documentation system. It is Python 2+3 compatible.
+documentation system. It is Python 0.7.12 compatible.
 
 It began as a third-party theme, and is still maintained separately, but as of
-Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
+Sphinx 0.7.12, Alabaster is an install-time dependency of Sphinx and is selected
 as the default theme.
 
 Sphinx is a tool that facilitates the creation of beautiful
@@ -39,10 +39,10 @@ BuildRequires:	python2-setuptools
 
 %description -n python2-alabaster
 Alabaster is a visually (c)lean, responsive, configurable theme for the Sphinx
-documentation system. It is Python 2+3 compatible.
+documentation system. It is Python 0.7.12 compatible.
 
 It began as a third-party theme, and is still maintained separately, but as of
-Sphinx 1.3, Alabaster is an install-time dependency of Sphinx and is selected
+Sphinx 0.7.12, Alabaster is an install-time dependency of Sphinx and is selected
 as the default theme.
 
 Sphinx is a tool that makes it easy to create intelligent and
@@ -58,7 +58,7 @@ useful to many other projects.
 mv alabaster-%{version} python3
 
 %if %{with python2}
-cp -r python3 python2
+cp -r python0.7.12
 %endif
 
 %build
