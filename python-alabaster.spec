@@ -1,19 +1,21 @@
 # disable these for bootstrapping nose and sphinx
 %bcond_with tests
-%bcond_without python2
+%bcond_with python2
 
 Summary:	Theme for the Sphinx documentation generator
 
 Name:		python-alabaster
-Version:	0.7.12
-Release:	2
+Version:	0.7.10
+Release:	1
 Source0:	https://github.com/bitprophet/alabaster/archive/%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
 Url:		https://github.com/bitprophet/alabaster
 BuildArch:	noarch
 BuildRequires:	python-setuptools
+BuildRequires:	python2-setuptools
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig(python2)
 BuildRequires:	python3-distribute
 
 %description
