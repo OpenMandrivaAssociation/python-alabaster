@@ -5,15 +5,14 @@ Summary:	Theme for the Sphinx documentation generator
 
 Name:		python-alabaster
 Version:	1.0.0
-Release:	1
-Source0:	https://github.com/bitprophet/alabaster/archive/%{version}.tar.gz
+Release:	2
+Source0:	https://github.com/sphinx-doc/alabaster/archive/%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
-Url:		https://github.com/bitprophet/alabaster
+Url:		https://github.com/sphinx-doc/alabaster
 BuildArch:	noarch
-BuildRequires:	python-setuptools
-BuildRequires:	pkgconfig(python3)
-BuildRequires:	python3-distribute
+BuildRequires:	python
+BuildRequires:	python%{pyver}dist(setuptools)
 BuildSystem:	python
 
 %description
