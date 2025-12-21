@@ -11,6 +11,7 @@ License:	BSD
 Group:		Development/Python
 Url:		https://github.com/sphinx-doc/alabaster
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	python
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildSystem:	python
